@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GERAL */
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Cabecalho */
+header {
+    width: 100%;
+    height: 7vh;
+    background: #4EA5E1;
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+.menu-content .list-itens a:before {
+    content: '';
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+
+/* Corpo principal do site - meio */
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+/* Imagem do card */
+.img-card {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 70px;
+    top: 10px;
+}
+.img-card-1 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border-radius: 6px;
+}
+.img-card-2 {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.card {
+    width: 302px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 6px;
+    opacity: 0.8;
+    box-shadow: 0 6px 10px black;
+    border: 1px solid #4EA5E1;
+}
+
+.card-body {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    padding: 10px;
+}
+
+
+h5 {
+    margin: 6px;
+}
+
+p {
+    letter-spacing: 0.6px;
+    margin-left: 6px;
+}
+
+
+/* transicoes */
+.card:hover {
+    transform: scale(1.2);
+    opacity: 1.1;
+
+}
